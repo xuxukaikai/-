@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+.box {
+	width: 1920px;
+	height: 1000px;
+	overflow: hidden;
+	position: relative;
+	background: #FFF;
+ background:url(img/铁三角背景.jpg) 0 0 no-repeat;
+	
+}
+.box img {
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	width: 100%;
+	height: 100%;
+}
+.box header {
+	width: 100%;
+	height: 40px;
+	background: #333;
+	z-index: 999;
+	position: absolute;
+}
+.box header .con {
+	width: 1800px;
+	height: 40px;
+	margin: 0 atuo;
+}
+.box header .left {
+	width: 30px;
+	height: 30px;
+ background: url(img/铁三角图标.png) 0 0 no-repeat;
+	background-size: cover;
+	margin-top: 5px;
+	margin-left: 20px;
+	float: left;
+}
+.box header .left2 {
+	width: 130px;
+	height: 20px;
+ background: url(img/铁三角文字.png) 0 0 no-repeat;
+	background-size: cover;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+.box header .right {
+	margin-top: 10px;
+	float: right
+}
+.box header .right a {
+	margin-right: 10px;
+	color: #F00;
+}
+.box nav {
+	width: 100%;
+	height: 90px;
+	background: rgba(0,0,0,0.2);
+	z-index: 1000;
+	position: absolute;
+	top: 40px;
+	border-bottom: 1px solid #fff;
+}
+.box nav ul {
+	width: 1800px;
+	height: 90px;
+	margin: 0 auto;
+	position: relative;
+}
+.box nav ul li {
+	float: left;
+	margin-right: 19%
+}
+.box nav ul .left a {
+	display: block;
+	height: 90px;
+	line-height: 90px;
+	font-size: 20px;
+	color: #fff;
+}
+.box nav ul .left a span {
+	margin: 0 10px;
+}
+.box aside {
+	display: none;
+	width: 380px;
+	height: 560px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left: 0;
+	top: 90px;
+	color: #fff;
+}
+.box nav ul .left:hover aside {
+	display: block;
+}
+.box aside span {
+	width: 20px;
+	height: 14px;
+ background: url(img/倒三角.jpg) 0 0 no-repeat;
+	position: absolute;
+	left: 50px;
+	top: 0;
+	background-size: cover;
+}
+.box aside dt {
+	width: 155px;
+	float: left
+}
+.box aside dt li {
+	width: 155px;
+	height: 25px;
+	line-height: 25px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+.box aside dt li.con {
+	font-size: 16px;
+	text-indent: 0;
+	font-family: "微软雅黑";
+	padding: 10px 0;
+}
+.box aside li:hover {
+	color: #fff
+}
+.box aside .zuo {
+	margin: 35px 0 0 68px;
+}
+.box aside .you {
+	margin-top: 35px;
+}
+.box nav ul .center {
+	margin-top: 32px;
+	float: right;
+}
+.box nav ul .center input {
+	width: 240px;
+	height: 30px;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	color: #fff;
+	line-height: 32px;
+	background: rgba(0,0,0,0);
+	padding-left: 30px;
+	box-sizing: border-box;
+ background: url(img/搜索按钮.png) no-repeat;
+	background-size: 30px 30px;
+}
+.new {
+	width: 100%;
+	height: 530px;
+	position: absolute;
+	top: 150px;
+}
+.new .header1 {
+	margin: 70px 650px 0;
+	padding: 2px 0 0 35px;
+}
+.new p {
+	font-size: 36px;
+	margin-top: 10px;
+	position:absolute;
+	left:900px;
+	color: #db0067;
+}
+.new ul {
+	margin: 70px auto 0;
+	width: 1900px;
+	position: absolute;
+	left: 0;
+	top: 310px;
+	transition: all 0.5s ease-in 0s;
+}
+.new ul li {
+	width: 600px;
+	height: 580px;
+	border: 1px solid #ccc;
+ background:url(img/铁三角左.png) 0 0 no-repeat;
+	float: left;
+	margin-bottom: 40px;
+	position: relative;
+	margin-right: 1%;
+	overflow: hidden;
+}
+.new ul li:nth-child(2) {
+ background-image:url(img/铁三角中.png);
+}
+.new ul li:nth-child(3) {
+	margin-right: 0;
+ background-image:url(img/铁三角右.png);
+}
+.new ul li hgroup {
+	position: absolute;
+	left: 0;
+	top: -580px;
+	width: 600px;
+	height: 580px;
+	background: rgba(0,0,0,0.5);
+	transition: all 0.5s ease-in 0s;
+}
+.new ul li:hover hgroup {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.new ul li hgroup h2:nth-child(1) {
+	font-size: 36px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 58px;
+}
+.new ul li hgroup h2:nth-child(2) {
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 15px;
+}
+.new ul li hgroup h2:nth-child(3) {
+	width: 41px;
+	height: 30px;
+	margin-left: 280px;
+	margin-top: 15px;
+ background:url(img/倒三角.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.new ul li hgroup h2:nth-child(4) {
+	font-size: 15px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 15px;
+}
+.new ul li hgroup h2:nth-child(5) {
+	width: 370px;
+	height: 67px;
+	margin-left: 115px;
+	margin-top: 25px;
+	background-size: cover;
+}
+.footer {
+	height: 20px;
+	line-height: 20px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 1px;
+}

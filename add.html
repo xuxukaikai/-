@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册界面</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<style type="text/css"></style>
+</head>
+
+<body style="background:url(img/背景.jpg) no-repeat;">
+<a href="main.html">
+<div class="top">&nbsp;&nbsp;&nbsp;返回主页</div>
+</a>
+<div class="container wrap1" style="height:450px;">
+		<div class="center-auto pd-sm-50 pd-xs-20 main_content">
+				<h2  align="center" >请输入您的订单信息</h2>
+				<p>&nbsp;</p>
+				<p align="center" class="text-center font16">订单添加</p>
+				<form action="PHP/add.php"  method="POST">
+						<div class="mg-t20">
+								<div align="center"><i class="icon-user icon_font"></i>
+										<input name="sname" type="text" class="login_input" id="sname"  placeholder="请输入用户姓名" />
+								</div>
+						</div>
+						  <p>性别: <input type="radio" value="男" name="sex" id="sex"/>男
+    <input type="radio" value="女" name="sex" id="sex"/>女</p>
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="address" type="text" class="login_input" id="address"  placeholder="请输入地址" />
+								</div>
+						</div>
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="email" type="text" class="login_input" id="email"  placeholder="请输入邮箱" />
+								</div>
+							</div>	
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="time" type="text" class="login_input" id="time"  placeholder="请输入订单完成时间" />
+								</div>
+						</div>
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="miao" type="text" class="login_input1" id="miao"  placeholder="请输入耳机设计描述" />
+								</div>
+						</div>
+						
+						<p></p>
+								
+						<div align="center">
+								<input type="submit" class="login_btn" name="submit" id='submit' onclick="" value="添加" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="button" onclick="window.location.href='PHP/cha.php'" class="btn1" value="返回" name="zc"/>
+						</div>
+				</form>
+		</div>
+		<!--row end--> 
+</div>
+<!--container end-->
+<div style="text-align:center;"> </div>
+<div class="footer">版权所有：15052080 </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录界面</title>
+<style>
+body {
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.wrap1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto
+}
+.main_content {
+	background: url(img/main_bg.png) repeat;
+	margin-left: auto;
+	margin-right: 200px;
+	text-align: left;
+	float: right;
+	border-radius: 8px;
+}
+.form-group {
+	position: relative;
+}
+.login_btn {
+	background: #090;
+	color: #fff;
+	font-size: 15px;
+	width: 120px;
+	line-height: 50px;
+	border-radius: 3px;
+	border: none;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+.login_btn:hover {
+	background-color: #486AAA;
+}
+.btn1 {
+	background: #3872f6;
+	color: #fff;
+	font-size: 15px;
+	width: 120px;
+	line-height: 50px;
+	border-radius: 3px;
+	border: none;
+	margin: 20px;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+.btn1:hover {
+	background-color: #486AAA;
+}
+.login_input {
+	width: 400px;
+	border: 1px solid #3872f6;
+	border-radius: 3px;
+	line-height: 40px;
+	padding: 2px 5px 2px 30px;
+	background: none;
+	height: 40px;
+}
+.font16 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.mg-t20 {
+	margin-top: 30px;
+}
+ @media (min-width:200px) {
+.pd-xs-20 {
+	padding: 20px;
+}
+}
+ @media (min-width:768px) {
+.pd-sm-50 {
+	padding: 50px;
+}
+}
+.footer {
+	height: 20px;
+	line-height: 20px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.top {
+	height: 35px;
+	line-height: 40px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #999;
+	color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body style="background:url(img/section2.jpg) no-repeat;">
+<a href="main.html">
+<div class="top">&nbsp;&nbsp;&nbsp;返回主页</div>
+</a>
+<div class="container wrap1" style="height:450px;">
+		<div class="center-auto pd-sm-50 pd-xs-20 main_content">
+				<h2  align="center" >请输入您的注册信息</h2>
+				<p>&nbsp;</p>
+				<p align="center" class="text-center font16">用户注册</p>
+				<form action="PHP/loginadd.php"  method="post">
+						<div class="mg-t20">
+								<div align="center"><i class="icon-user icon_font"></i>
+										<input name="username" type="text" class="login_input" id="username"  placeholder="请输入用户名" />
+								</div>
+						</div>
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="userpass" type="password" class="login_input" id="userpass"  placeholder="请输入密码" />
+								</div>
+						</div>
+						<div class="mg-t20">
+								<div align="center"><i class="icon-lock icon_font"></i>
+										<input name="userpass1" type="password" class="login_input" id="userpass1"  placeholder="请输入确认密码" />
+								</div>
+						</div>
+						
+						<label>
+						<p></p>
+						<div align="center">
+								<input type="submit" class="login_btn" name="submit" id='submit' onclick="" value="注册"/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="button" onclick="window.location.href='index1.html'" class="btn1" value="返回" name="zc"/>
+						</div>
+				</form>
+		</div>
+		<!--row end--> 
+</div>
+<!--container end-->
+<div style="text-align:center;"> </div>
+<div class="footer">版权所有：15052080 </div>
+</body>
+</html>

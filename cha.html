@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>无标题文档</title>
+</head>
+ 
+<body>
+<table width="100%" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>代号</td>
+    <td>名称</td>
+    <td>性别</td>
+    <td>生日</td>
+    <td>班级</td>
+	<td>描述</td>
+    <td>操作</td>
+  </tr>
+ 
+<?php
+$db = new MySQLi("localhost:3306","root","qazwsxedc","sys");
+//连接数据库
+$sql = "select * from dingdan ";
+//写sql语句
+$r = $db->query($sql);
+//执行sql语句返回给r
+if($r)//条件
+{
+  while ($attr = $r->fetch_row())
+  {
+    $ssex = "";
+     if($attr[2])
+     {
+       $sex = "男";
+     }
+     else
+       {
+         $sex = "女";
+       }
+    echo
+    "
+ <tr>
+    <td>{$attr[0]}</td>
+    <td>{$attr[1]}</td>
+    <td>{$sex}</td>
+    <td>{$attr[3]}</td>
+    <td>{$attr[4]}</td>
+	<td>{$attr[4]}</td>
+//添加一个单击事件，防止不小心删掉
+<td><a onclick=\"return confirm('确定要删除吗？？？')"
+href='shanchu.php?sno={$attr[0]}'>删除</a>
+ <a href='xiugai.php?sno={$attr[0]}'>修改</a> </td> </tr>"; } } ?>
+ 
+  
+  
+ 
+</table>
+<a href="tianjia.php" rel="external nofollow" >添加页面</a>
+</body>
+ 
+</html>
